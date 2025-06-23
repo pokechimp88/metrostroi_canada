@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$model"		"1"
+	"$basetexture"	"models/gsgtrainprops/rolling_stock/50ft_ps/csxt_994371"
+	"$halflambert" 	"1"
+	"$alphatest" 	"1"
+}
