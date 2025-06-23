@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$model"		"1"
+	"$basetexture"	"models/gsgtrainprops/rolling_stock/trashflat/container_triton"
+	"$halflambert" 	"1"
+	"$alphatest" 	"1"
+	"$phong"     	"1"
+ 	"$phongexponent"  "10"
+ 	"$phongboost"   	"1"
+ 	"$phongfresnelranges"   "[0 .5 1]"
+}
