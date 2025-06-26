@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "models/metrostroi_skins/destination_sign/ttc/special"
+	"$translucent" 1
+}
