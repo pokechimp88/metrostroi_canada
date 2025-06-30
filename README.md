@@ -24,5 +24,10 @@ This addon was formerly exclusive server content on the server but has since bee
 This addon contains scripts and textures for freight train cars in Metrostroi. This addon is the first of its kind to add realistic North American freight cars to Metrostroi Subway Simulator. The models used in the addon are sourced from a separate workshop addon by a different author and used with permission.
 The addon also contains textures for various paint schemes of freight cars and intermodal containers.
 
+**Metrostroi Hijacker Nextbot**
+
+GMod Nextbot NPC that follows your train and somehow knows how to get it to malfunction regardless of the type of train. Stop for just a second, and you could experience countless electrical, pneumatic, or mechanical failures! The Hijacker makes no sound and will not harm players or props, its only goal is to bring trains to a standstill.
+I programmed this Nextbot mostly as a joke, it is a modified version of the Wok nextbot with the music and damage removed, and the ability to trigger random failures or specific wire failures on the nearest Metrostroi train. Targeting is slightly messed up, it can attack from a distance sometimes while being unable to attack from nearby in other cases.
+This addon requires a map that has a navmesh (navigation mesh for Nextbots) AND railway tracks of a gauge compatible with Metrostroi.
 
 Other addons will be added to this list as time goes on.
