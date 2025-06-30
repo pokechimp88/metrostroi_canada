@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "npc_metrostroi_hijacker/metrostroi_hijacker"
+	"$translucent" 1
+	"$vertexalpha" 1
+}
