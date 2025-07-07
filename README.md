@@ -30,4 +30,9 @@ GMod Nextbot NPC that follows your train and somehow knows how to get it to malf
 I programmed this Nextbot mostly as a joke, it is a modified version of the Wok nextbot with the music and damage removed, and the ability to trigger random failures or specific wire failures on the nearest Metrostroi train. Targeting is slightly messed up, it can attack from a distance sometimes while being unable to attack from nearby in other cases.
 This addon requires a map that has a navmesh (navigation mesh for Nextbots) AND railway tracks of a gauge compatible with Metrostroi.
 
+**Unreliable Train (81-520/521)**
+
+Custom subway train that combines the worst parts of every original Metrostroi tran. It has the body and interior of an 81-718, the cab walls and electrical syste from the 81-717 (I plan to install the 81-720 Yauza current chopper later on), the control panel from a Ezh3 with the speedometer and indicators from a Ema-502, the ARS-MP speed regulation system from the Ezh, pneumatics from the Type E, and motors and bogies from the Type D. I also plan to add the throttle from the 81-722 to this train later on. I modified cab models myself to get them to fit together, and made modifications to the main code to prevent Lua errors. I made this train for use on my Metrostroi server after my friend suggested it as a joke, but it turned out to be more than just that and isn't as unreliable as it seems. Its only real issues are the ARS-MP system, slow acceleration and low top speed due to the D motors, and the uneven braking from the E type pneumatics. Other elements, like the Ema-502 instruments, 718 boddy, and Ezh3 control panel simply look ugly but are still very functional.
+I plan to use this to develop even more complex GMod addons in the future, such as Metrostroi-compatible diesel locomotives with accurate fuel systems and other components for maximum realism.
+
 Other addons will be added to this list as time goes on.
