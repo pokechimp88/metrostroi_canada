@@ -137,7 +137,7 @@ ENT.ButtonMap["RearDoor"] = {
 for i=0,5 do
     ENT.ClientProps["TrainNumberL"..i] = {
         model = "models/metrostroi_train/common/bort_numbers.mdl",
-        pos = Vector(60+i*6.6-4*6.6/2,10,18),
+        pos = Vector(210+i*6.6-i*6.6/2,54.5,25),
         ang = Angle(0,180,4),
         skin=0,
         hide = 1.5,
@@ -149,7 +149,7 @@ end
 for i=0,5 do
     ENT.ClientProps["TrainNumberR"..i] = {
         model = "models/metrostroi_train/common/bort_numbers.mdl",
-        pos = Vector(53-i*6.6+4*6.6/2,-64.1,18),
+        pos = Vector(-210-i*6.6+i*6.6/2,-54.5,25),
         ang = Angle(0,0,4),
         skin=0,
         hide = 1.5,

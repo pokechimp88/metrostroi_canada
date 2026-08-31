@@ -63,13 +63,13 @@ ENT.ButtonMap["FrontPneumatic"] = {
 }
 ENT.ClientProps["FrontBrake"] = {
     model = "models/metrostroi_train/bogey/disconnect_valve_red.mdl",
-    pos = Vector(323, -30+0.5, -69+65),
+    pos = Vector(330, -30+0.5, -69+80),
     ang = Angle( 15,-90,0),
     hide = 2,30
 }
 ENT.ClientProps["FrontTrain"] = {
     model = "models/metrostroi_train/bogey/disconnect_valve_blue.mdl",
-    pos = Vector(323, 30+0.5, -69+65),
+    pos = Vector(330, 30+0.5, -69+80),
     ang = Angle(-15,-90,0),
     hide = 2,
 }
@@ -92,13 +92,13 @@ ENT.ButtonMap["RearPneumatic"] = {
 }
 ENT.ClientProps["RearTrain"] = {--
     model = "models/metrostroi_train/bogey/disconnect_valve_blue.mdl",
-    pos = Vector(-323, -30, -69+65),
+    pos = Vector(-330, -30, -69+80),
     ang = Angle(-15,90,0),
     hide = 2,
 }
 ENT.ClientProps["RearBrake"] = {--
     model = "models/metrostroi_train/bogey/disconnect_valve_red.mdl",
-    pos = Vector(-323, 30, -69+65),
+    pos = Vector(-330, 30, -69+80),
     ang = Angle( 15,90,0),
     hide = 2,
 }

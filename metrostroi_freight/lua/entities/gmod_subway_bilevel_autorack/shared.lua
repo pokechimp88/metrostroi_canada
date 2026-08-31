@@ -14,6 +14,14 @@ ENT.Spawnable       = true
 ENT.AdminSpawnable  = false
 ENT.DontAccelerateSimulation = false
 
+function ENT:SetEKKType(type)
+	self.SubwayTrain.EKKType = type
+end
+
+function ENT:GetEKKType()
+	return self.SubwayTrain.EKKType
+end
+
 function ENT:PassengerCapacity()
     return 0 --Does not carry passengers
 end
@@ -70,7 +78,7 @@ function ENT:InitializeSystems()
     self:LoadSystem("Pneumatic","Boxcar_Pneumatic")
 
 
-    self:LoadSystem("Panel","81_710_g_Panel")
+    self:LoadSystem("Panel","Boxcar_Panel")
 
 end
 
@@ -88,10 +96,10 @@ ENT.AnnouncerPositions = {
 -- 2 = Only intherim
 ---------------------------------------------------
 ENT.SubwayTrain = {
-    Type = "81-722",
-    Name = "81-723",
+    Type = "Autorack",
+    Name = "Semi-open Autorack",
     WagType = 2,
-    Manufacturer = "MVM",
+    Manufacturer = "Thrall",
     EKKType = 710, --pass through EKK cables
 }
 ENT.NumberRanges = {{100000,999999}}

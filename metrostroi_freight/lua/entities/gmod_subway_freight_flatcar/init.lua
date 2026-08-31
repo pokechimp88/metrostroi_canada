@@ -11,7 +11,7 @@ ENT.SyncTable = {
 --------------------------------------------------------------------------------
 function ENT:Initialize()
     -- Set model and initialize
-    self:SetModel("models/gsgtrainprops/trains/rolling_stock/flatcar_89ft_garbage.mdl") --FIXME
+    self:SetModel("models/gsgtrainprops/trains/rolling_stock/flatcar_89ft.mdl") --FIXME
     self.BaseClass.Initialize(self)
     self:SetPos(self:GetPos() + Vector(0,0,140))
 
@@ -58,16 +58,8 @@ function ENT:Initialize()
             ID = "RearBrakeLineIsolationToggle",
             Pos = Vector(-331, 31, 5), Radius = 20,
         },
-        {
-            ID = "RearDoor",
-            Pos = Vector(-331, -38, -4), Radius = 20,
-        },
-        {
-            ID = "FrontDoor",
-            Pos = Vector(330, 36, -4), Radius = 20,
-        },
     }
-
+    
     -- Initialize key mapping
     self.KeyMap = {
     }
@@ -84,8 +76,6 @@ function ENT:Initialize()
     self.Lights = {
 
     }
-    self.FrontDoor = false
-    self.RearDoor = false
 
 end
 
@@ -132,6 +122,17 @@ function ENT:Think()
     return retVal
 end
 
+function ENT:TrainSpawnerUpdate()
+    local ekk = self:GetNW2Int("ConnectorType")
+    if ekk == 2 then self:SetEKKType(703)
+    elseif ekk == 3 then self:SetEKKType(702)
+    elseif ekk == 4 then self:SetEKKType(717)
+    elseif ekk == 5 then self:SetEKKType(718)
+    elseif ekk == 6 then self:SetEKKType(720)
+    elseif ekk == 7 then self:SetEKKType(722)
+    else self:SetEKKType(710) end
+    self:UpdateTextures()
+end
 
 function ENT:OnCouple(train,isfront)
     if isfront and self.FrontAutoCouple then
@@ -143,10 +144,13 @@ function ENT:OnCouple(train,isfront)
         self.RearTrainLineIsolation:TriggerInput("Open",1.0)
         self.RearAutoCouple = false
     end
+    local ekk = self:GetNW2Int("ConnectorType")
+    if ekk == 2 then self:SetEKKType(703)
+    elseif ekk == 3 then self:SetEKKType(702)
+    elseif ekk == 4 then self:SetEKKType(717)
+    elseif ekk == 5 then self:SetEKKType(718)
+    elseif ekk == 6 then self:SetEKKType(720)
+    elseif ekk == 7 then self:SetEKKType(722)
+    else self:SetEKKType(710) end
     self.BaseClass.OnCouple(self,train,isfront)
-end
-
-function ENT:OnButtonPress(button,ply)
-    if button == "FrontDoor" then self.FrontDoor = not self.FrontDoor end
-    if button == "RearDoor" then self.RearDoor = not self.RearDoor end
 end
